@@ -21,13 +21,14 @@ let clock = () => {
         hrs = hrs - 12;
         period = "PM";
     }
-    hrs = hrs < 10 ? "0" + hrs : hrs;
+    //this adds a 0 in front of any hrs (or minutes seconds) that are less than 10.  8:00, for example, will display as 08:00:00//
+    hrs = hrs < 10 ? "0" + hrs : hrs; 
     mins = mins < 10 ? "0" + mins : mins;
     secs = secs < 10 ? "0" + secs : secs;
 
     let time = `${hrs}:${mins}:${secs}:${period}`;
     document.getElementById("clock").innerText = time;
-    setTimeout(clock, 1000);
+    setTimeout(clock, 1000); //this updates the clock every second, to geep it "running"//
 };
 
 clock();
