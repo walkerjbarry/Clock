@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: linear-gradient(#4F2683, #FFC62F);
+    background-image: linear-gradient(#FFE4E1, #FFC0CB);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 #clock {
     height: 100vh;
     width: 100%;
-    color: #FFC62F;
+    color: #F4A460;
     border: 5px solid;
     display: flex;
     align-items: center;
