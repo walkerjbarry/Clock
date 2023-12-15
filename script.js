@@ -28,7 +28,7 @@ let clock = () => {
 
     let time = `${hrs}:${mins}:${secs}:${period}`;
     document.getElementById("clock").innerText = time;
-    setTimeout(clock, 1000); //this updates the clock every second, to geep it "running"//
+    setTimeout(clock, 1000); //this updates the clock every second, to keep it "running"//
 };
 
 clock();
